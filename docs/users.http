@@ -1,0 +1,7 @@
+@base=http://localhost:3009/api/v1
+@token=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkY2YzZmU2NTA1OTljMGVhIjoxLCJkYmVlYWQ5YWU2MTQyYTJmIjoibWF0ZXVzQG5lcmlnby5uZXQiLCI1NGNiOTU1OTU4ZjUzNGIxIjoiN2QiLCJpYXQiOjE3MzAwNjMyMDl9.nU0gVGEJamFHWNxmcvecW0xqN0i3LrcE4a5ir6Qfv1U
+
+### Profile route
+GET {{base}}/users/profile
+Content-Type: application/json
+Authorization: {{token}}

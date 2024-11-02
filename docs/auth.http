@@ -1,0 +1,23 @@
+@base=http://localhost:3009/api/v1
+
+### Register a new
+POST {{base}}/auth/register
+Content-Type: application/json
+
+{
+  "first_name":"Mateus",
+  "last_name":"Neri",
+  "email":"mateus@nerigo.net",
+  "password":"admin123",
+  "password_confirmation":"admin123"
+}
+
+### Login a user
+POST {{base}}/auth/login
+Content-Type: application/json
+
+{
+  "email":"mateus@nerigo.net",
+  "password":"admin123"
+}
+
